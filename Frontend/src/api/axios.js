@@ -1,6 +1,6 @@
 import axios from "axios";
 const API = axios.create({
-    baseURL:"https://product-management-2-h1c1.onrender.com"
+    baseURL:"https://product-management-2-h1c1.onrender.com/api"
 });
 API.interceptors.request.use((req)=>{
     const token = localStorage.getItem("token");
